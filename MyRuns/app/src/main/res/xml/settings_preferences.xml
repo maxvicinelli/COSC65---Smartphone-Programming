@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Application Settings">
+        <CheckBoxPreference
+            android:key="privacy_setting"
+            android:title="Privacy Setting"
+            android:summary="Posting your records anonymously"
+
+            />
+
+        <ListPreference
+            android:key="unit_preference"
+            android:title="Unit Preference"
+            android:summary="Select the units"
+            android:entries="@array/unit_list_preferences"
+            android:entryValues="@array/unitvalues_list_preference"
+            android:dialogTitle="Unit Preference"
+
+            />
+
+
+
+        <Preference
+            android:key="web_link"
+            android:title="Webpage"
+            android:summary="https://www.cs.dartmouth.edu/~campbell/cs65/cs65.html">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.cs.dartmouth.edu/~campbell/cs65/cs65.html">
+            </intent>
+
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Account Settings">
+
+        <Preference
+            android:key="sign_out"
+            android:title="Sign out" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="edu.dartmouth.cs.myruns1"
+                android:targetClass="edu.dartmouth.cs.myruns1.SignInActivity">
+            </intent>
+
+        </Preference>
+
+    </PreferenceCategory>
+
+
+
+
+
+
+</PreferenceScreen>

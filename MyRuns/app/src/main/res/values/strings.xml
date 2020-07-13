@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MyRuns1</string>
+    <string name="email_prompt">Email</string>
+    <string name="password_prompt">Password</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="register_text">Register</string>
+    <string name="change_text">Change</string>
+    <string name="name_hint">Name</string>
+    <string name="female_option">Female</string>
+    <string name="male_option">Male</string>
+    <string name="phone_number">Phone</string>
+    <string name="major_text">Major</string>
+    <string name="class_number">Dartmouth Class</string>
+
+    <string-array name="ui_profile_photo_picker_items">
+        <item>Take picture from camera</item>
+        <item>Take picture from gallery</item>
+    </string-array>
+
+    <string-array name="input_type_items">
+        <item>Manual</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string-array name="activity_type_items">
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Country Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="input_type">Input Type</string>
+    <string name="activity_type">Activity Type</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_history">Hello blank fragment history</string>
+    <string name="hello_blank_fragment_start">Hello blank fragment start</string>
+</resources>
