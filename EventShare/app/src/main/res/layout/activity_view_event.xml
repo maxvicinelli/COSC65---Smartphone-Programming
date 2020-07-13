@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEventActivity">
+
+
+    <TextView
+        android:id="@+id/title_view_event"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/location_view_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/date_view_event"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/location_view_event"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="location"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title_view_event"
+        app:layout_constraintRight_toLeftOf="@id/time_view_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/host_view_event"
+        />
+
+
+    <TextView
+        android:id="@+id/date_view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:text="today"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/time_view_event"
+        app:layout_constraintLeft_toRightOf="@id/title_view_event"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time_view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:00"
+        android:textSize="20sp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/date_view_event"
+        app:layout_constraintLeft_toRightOf="@id/location_view_event"
+        app:layout_constraintBottom_toTopOf="@+id/host_view_event"
+        />
+
+    <ImageView
+        android:id="@+id/image_view_event"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/event_info_view_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toLeftOf="@id/upvote_bttn_view_event"
+        app:layout_constraintTop_toBottomOf="@id/host_view_event" />
+
+    <TextView
+        android:id="@+id/host_view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="An Event by Beta Alpha Omega, top haus"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/location_view_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image_view_event"
+        />
+
+    <TextView
+        android:id="@+id/access_view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a closed event"
+        android:textSize="15sp"
+
+        android:layout_marginLeft="30dp"
+
+        app:layout_constraintLeft_toRightOf="@id/image_view_event"
+        app:layout_constraintTop_toBottomOf="@id/upvote_bttn_view_event"
+        app:layout_constraintBottom_toTopOf="@id/event_info_view_event"
+
+        />
+
+    <TextView
+        android:id="@+id/event_info_view_event"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:text="Wow this is a pretty cool event.
+        You're going to have a lot of fun if you decide to come. I can't promise it'll be
+        the best decision you ever made, but it will definitely be in like the top 50 or so."
+        android:textSize="12sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintTop_toBottomOf="@id/image_view_event"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <Button
+        android:id="@+id/upvote_bttn_view_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_upvote"
+        android:text="0"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/image_view_event"
+        app:layout_constraintTop_toBottomOf="@id/host_view_event"
+        app:layout_constraintBottom_toTopOf="@id/access_view_event"
+
+
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

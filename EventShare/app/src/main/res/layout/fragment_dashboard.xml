@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.dashboard.NewEventFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/title_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginTop="24dp"
+            android:hint="Event Name:"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/location_editText"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:hint="Location:"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:text="Date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Time"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/info_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Info:"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public/Private"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/switchtoggle"
+            android:layout_width="79dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:textOff="Private"
+            android:textOn="Public">
+
+        </Switch>
+
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/Green"
+            android:id="@+id/listViewdash"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/save_event_button"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:text="Save"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>

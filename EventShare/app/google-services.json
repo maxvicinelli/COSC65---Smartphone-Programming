@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "164335829200",
+    "firebase_url": "https://myruns-6d92b.firebaseio.com",
+    "project_id": "myruns-6d92b",
+    "storage_bucket": "myruns-6d92b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164335829200:android:0318bd255c335a0afe5ed5",
+        "android_client_info": {
+          "package_name": "com.frohlich.eventshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164335829200-1gbojp4tlvh2l3m78v7m1nep36hj5l5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdCotcb3jG9K6qoRxZze4H9_2tZR0fEsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164335829200-1gbojp4tlvh2l3m78v7m1nep36hj5l5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

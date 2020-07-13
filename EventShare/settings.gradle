@@ -1,0 +1,2 @@
+rootProject.name='EventShare'
+include ':app'
